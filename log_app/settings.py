@@ -156,7 +156,7 @@ class EmailHandler(logging.Handler):
         self.yag.send(to='alisa.krushinina@mail.ru', subject=subject, contents=body)
 
 
-email_handler = EmailHandler('alisa.xorok@gmail.com', 'Rozachainaia01/')
+email_handler = EmailHandler('alisa.xorok@gmail.com', 'SecretPassword')
 email_handler.setLevel(logging.ERROR)
 email_handler.setFormatter(logging.Formatter(file_format_errors))
 
