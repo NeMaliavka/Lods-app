@@ -23,7 +23,7 @@ def send_test_email():
 
     try:
         with yagmail.SMTP('smtp.yandex.ru', 465) as server:
-            server.login('alisa.xorok@gmail.com', 'Rozachainaia01/')
+            server.login('alisa.xorok@gmail.com', 'SecretPassword')
             server.sendmail(msg['From'], [msg['To']], msg.as_string())
             print("Тестовое сообщение отправлено успешно.")
     except Exception as e:
